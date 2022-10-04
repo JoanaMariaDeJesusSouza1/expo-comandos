@@ -1,0 +1,185 @@
+
+aula 62
+
+ver a versão do node
+
+node --version
+
+
+versão do npm
+
+npm --version
+
+
+npm para instalar a ferramenta de linha de comando do Expo.
+
+npm install expo-cli --global
+
+ou
+
+yarn add  cli ---global
+
+para mac ou linux
+
+sudo npm install expo-cli --global
+
+
+permite uzaar o build futuramente 
+
+npm install react-native-gesture-handler
+
+
+Para criar um novo projeto
+
+expo init <nome do projeto>
+
+
+navega até o diretório onde está a pasta do projeto
+
+cd <nome da pasta> ex: weather/
+
+
+Para executar o projeto
+
+expo start
+
+
+para poder logar com a mesma conta do expo
+
+npm install -g eas-cli
+eas login
+
+
+PARA ANDROID
+eas build -p android OU eas build --platform android
+
+PARA IOS
+eas build --platform ios
+
+PARA TODAS AS PLATAFORMAS
+eas build --platform all
+
+
+o computador e o celular devem estar conectados à mesma rede para que isso funcione.
+PARA PREVIEW ANDROID, APK
+
+eas build -p android --profile preview
+
+
+Para construir o apk, execute o comando sudo expo
+build:android Para construir o ipa, execute o
+comando sudo expo build:ios
+
+
+comando para abilitar o modo web
+
+yarn add react-native-web
+
+expo install react-dom
+
+
+para conseguir iniciar o projeto
+
+eas.json
+
+e colocar esse comando dentro
+
+{
+  "cli": {
+    "version": ">= 0.53.1"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk",
+        "distribution": "internal"
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
+    "preview3": {
+      "developmentClient": true
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {}
+  }
+}
+
+
+PARA INSTALAR YARN
+
+npm install -g yarn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aula c69
+
+para clonar uma pasta vc usa o comando
+
+git clone +(url do que quer clonar)
+
+
+para instalar um qr code usamos o comando
+
+expo install expo-barcode-scanner
+
+ou
+
+npx expo install expo-barcode-scanner
+
+
+para poder usar a camera 
+
+-expo install expo-permissions 
+
+
+PARA GERAR QR Code===
+
+eas build -p android --profile preview
+
+eas.json
+
+npm install expo-cli--location-global
+
+npm install react-native-safe-area-context
+
+npm install react-native-elements   se der erro yarn add react-native-elements 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
